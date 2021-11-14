@@ -6,16 +6,17 @@ mov ds, ax
 
 start:
 	cli
-	mov si, msg
-	mov ah, 0x0E
-.loop	lodsb
-	or al, al
-	jz halt
+	mov ah, 0x0e
+	mov al, 64
+	jmp loop
+loop:
+	inc al
+	cmp al, 'Z'+1
+	je exit
 	int 0x10
-	jmp .loop
-
-halt:	hlt
-msg:	db "Hello world!", 0 
+	jmp loop
+exit:
+	jmp $
 
 times 510 - ($ - $$) db 0
 dw 0xAA55

@@ -11,8 +11,8 @@ This is pretty much a self-enteratainment project to learn low-level stuff, **no
 - Simple-ass "Hello world" in Assembly ✅
 - Boot "Hello world" in QEMU ✅
 - Boot "Hello world" in bare-metal ✅ (tried on a Thinkpad E40-70, worked. also in a MacBook Air 2017 13", didn't work.)
-- Standard I/O Library ❌
-- Kernel ❌
+- Standard I/O Library (Work-In-Progress) ❌
+- Kernel (Work-In-Progress) ❌
 - OS itself ❌
 - Filesystem ❌
 - Bash port ❌

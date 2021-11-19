@@ -65,7 +65,7 @@ If ever needed, the suggested codename for Bread is `br-x86`.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-Getting Started
+## Getting Started
 
 To set up Bread in a virtual machine, you could run `qemu` (QEMU™) with the `bread_os.bin` binary file `nasm` outputs when compiling Bread as suggested with the Makefile, however, there's an instruction in Makefile so you can create a `.iso` image to run Bread on other virtual machine supervisors such as Virtualbox™ or VMWare™ or bare-metal.
 

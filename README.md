@@ -73,8 +73,11 @@ To set up Bread in a virtual machine, you could run `qemu` (QEMU™) with the `b
 
 * `nasm`
 * `gcc`
+* `i686-elf-gcc` (or any cross-compiler) (1)
 * `make`
 * `qemu` (QEMU™), not required but highly recommended
+
+**1:** In case of using any other compiler that is not 1686-elf-gcc, you'll have to modify the Makefile
 
 ### Building
 

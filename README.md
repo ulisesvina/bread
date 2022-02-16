@@ -55,9 +55,9 @@
 
 Bread is a simple, free and open source and dependency-free operating system made by the Mpore (mpore.xyz) team.
 
-Right now, Bread is a work-in-progress project and can't nor should be used as a professional enviroment.
+As of now (and probably forever), Bread is a work-in-progress project and can't nor should be used as a professional enviroment. Bread is also not intended to work with standard libraries, (that's the reason why there's no any available), but rather, our own libraries and functions which will be documented once ready to distribute.
 
-If ever needed, the suggested codename for Bread is `br-x86`.
+If ever needed, the suggested codename for Bread is `br-amd64`.
 
 ### Built With
 

@@ -43,6 +43,7 @@
         <li><a href="#mascot">Mascot</a></li>
       </ul>
     <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#achievements">Achievements</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
   </ol>
@@ -131,7 +132,13 @@ See the [open issues](https://github.com/mporexyz/bread/issues) for a full list 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
+## Achievements
 
+- Printed "Hello world" in Assembly
+- Printed "Hello world" with C (no stdio lib.)
+- Migrated from i386 to amd64
+- Ran successfully in a Virtual Machine.
+- Ran successfully on bare-metal (tested on: Lenovo Thinkpad L440, Lenovo Thinkpad E40-70, MacBook Air 2017 13")
 
 ## Contributing
 

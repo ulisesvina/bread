@@ -158,13 +158,13 @@ Distributed under the GPL-3.0 License. See `LICENSE` for more information.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-[contributors-shield]: https://img.shields.io/github/contributors/mporexyz/bread?style=for-the-badge
-[contributors-url]: https://github.com/mporexyz/bread/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/mporexyz/bread?style=for-the-badge
-[forks-url]: https://github.com/mporexyz/bread/network/members
-[stars-shield]: https://img.shields.io/github/stars/mporexyz/bread?style=for-the-badge
-[stars-url]: https://github.com/mporexyz/bread/stargazers
-[issues-shield]: https://img.shields.io/github/issues/mporexyz/bread?style=for-the-badge
-[issues-url]: https://github.com/mporexyz/bread/issues
-[license-shield]: https://img.shields.io/github/license/mporexyz/bread?style=for-the-badge
-[license-url]: https://github.com/mporexyz/bread/blob/master/LICENSE
+[contributors-shield]: https://img.shields.io/github/contributors/ulisesvina/bread?style=for-the-badge
+[contributors-url]: https://github.com/ulisesvina/bread/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/ulisesvina/bread?style=for-the-badge
+[forks-url]: https://github.com/ulisesvina/bread/network/members
+[stars-shield]: https://img.shields.io/github/stars/ulisesvina/bread?style=for-the-badge
+[stars-url]: https://github.com/ulisesvina/bread/stargazers
+[issues-shield]: https://img.shields.io/github/issues/ulisesvina/bread?style=for-the-badge
+[issues-url]: https://github.com/ulisesvina/bread/issues
+[license-shield]: https://img.shields.io/github/license/ulisesvina/bread?style=for-the-badge
+[license-url]: https://github.com/ulisesvina/bread/blob/master/LICENSE

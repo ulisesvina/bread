@@ -4,6 +4,7 @@ main:
 	nasm "./src/kernel_entry.asm" -f elf -o ./out/kernel_entry.o
 	gcc -fno-pic -m32 -c -o ./out/kernel.o ./src/kernel.c
 	ld -fno-pie -shared -m elf_i386 -o ./out/kernel.bin ./out/kernel_entry.o ./out/kernel.o --oformat binary
+	cat ./out/bootloader.bin ./out/kernel.bin > ./out/bread.img
 copy:
 	make iso
 	dd if=./out/bread_os.iso of=$(device)

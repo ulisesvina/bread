@@ -1,8 +1,9 @@
 extern void _start() {
-    char *VGABUF = (char *)0xB8000;
-    VGABUF[0] = 'H';
-    VGABUF[2] = 'e';
-    VGABUF[4] = 'l';
-    VGABUF[6] = 'l';
-    VGABUF[8] = 'o';
+    char *VGA_BUF = (unsigned char *) (0xb8000),
+    *str = "Hello world";
+    
+    for(int i = 0, j = 0; str[i] != '\0'; i++) {
+        VGA_BUF[j] = str[i];
+        j += 2;
+    }
 }

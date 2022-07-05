@@ -11,7 +11,7 @@ copy:
 
 iso:
 	dd if=/dev/zero of=./out/bread_os.iso bs=512 count=2880
-	dd if=./out/bread_os.bin of=./out/boot.iso conv=notrunc bs=512 seek=1 count=128
+	dd if=./out/bread.img of=./out/boot.iso conv=notrunc bs=512 seek=1 count=128
 
 clean:
 	rm -rf out

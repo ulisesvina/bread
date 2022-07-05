@@ -138,7 +138,7 @@ See the [open issues](https://github.com/mporexyz/bread/issues) for a full list 
 - Printed "Hello world" with C (no stdio lib.)
 - Migrated from i386 to amd64
 - Ran successfully in a Virtual Machine.
-- Ran successfully on bare-metal (tested on: Lenovo Thinkpad L440, Lenovo Thinkpad E40-70)
+- Ran successfully on bare-metal (tested on: Lenovo Thinkpad L440, Lenovo E40-70)
 
 ## Contributing
 

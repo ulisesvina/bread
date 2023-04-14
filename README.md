@@ -119,13 +119,15 @@ _For more information, please refer to the [Official Website](https://mpore.xyz/
 - [ ] Official Website
 - [ ] Add changelog
 - [x] Functioning bootloader
-- [ ] Functioning kernel
+- [x] Functioning kernel
 - [ ] Porting standard *commonly used* libraries.
-    - [ ] stdio
+    - [x] stdio
     - [ ] stdlib
     - [ ] stdint
     - [ ] math
     - [ ] time
+- [x] VGA Driver
+- [ ] PS/2 Keyboard Driver
 - [ ] Filesystem
 
 See the [open issues](https://github.com/mporexyz/bread/issues) for a full list of known issues.

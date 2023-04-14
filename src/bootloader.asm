@@ -63,6 +63,17 @@ GDT_data:
     db 0xcf
     db 0x0
 GDT_end:
+
+IRQ1_handler:
+    pusha
+    xor ah, ah
+    in al, 0x60
+    mov byte [key_pressed], al
+    mov al, 0x20
+    out 0x20, al
+    popa
+    iretd
+
 gdt:
     dw GDT_end - GDT_start - 1
     dd GDT_start
@@ -79,7 +90,55 @@ protected_mode:
     mov ebp, 0x90000
     mov esp, ebp
 
-    jmp KERNEL
+    xor ax, ax
+    mov es, ax
+
+    mov al, 0x11
+    out 0x20, al
+    out 0xa0, al
+
+    mov al, 0x20
+    out 0x21, al
+    mov al, 0x28
+    out 0xa1, al
+
+    mov al, 4
+    out 0x21, al
+    mov al, 2
+    out 0xa1, al
+
+    mov al, 1
+    out 0x21, al
+    out 0xa1, al
+
+    mov al, 0xff
+    out 0x21, al
+    mov al, 0xff
+    out 0xa1, al
+
+    lidt [idt_ptr]
+
+    in al, 0x21
+    and al, 0xfd
+    out 0x21, al
+
+    sti
+
+    jmp KERNEL    
+
+IDT_start:
+    dw IRQ1_handler_end - IRQ1_handler - 1
+    dw IRQ1_handler
+    db 0x8e
+    db CODE_SEG
+IRQ1_handler_end:
+idt_ptr:
+    dw IDT_end - IDT_start - 1
+    dd IDT_start
+    
+key_pressed: db -1
 
 times 510-($-$$) db 0
 dw 0xaa55
+
+IDT_end:
